@@ -6,42 +6,33 @@ shuffle($files);
 <html lang="en">
 <head>
 	<!--
-		GameboyCamera by Jambonbill
-		http://gameboycamera.jambonbill.org
+	GameboyCamera by Jambonbill
+	http://gameboycamera.jambonbill.org
 	-->
 	<meta charset="utf-8">
 	<meta name="description" content="Jambonbill Game boy Camera">
 	<meta name="keywords" content="GIF, gameboy, camera, pixel, 8bit, nintendo, jambonbill, sidabitball">
 	<meta name="author" content="Jambonbill">
-	<link rel="stylesheet" href="css/gameboycamera.css">
 
-	<link rel="shortcut icon" href="favicon.ico">
-	<title>Jambonbill Gameboy Camera GIF</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/gbc.css">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/icon57px.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="img/icon72px.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="img/icon114px.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="img/icon144px.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="img/icon180px.png" />
+
 	<meta property="og:title" content="Jambonbill Gameboy Camera GIF" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://gameboycamera.jambonbill.org/" />
 	<meta property="og:image" content="<?php echo $files[0]?>" />
 	<meta property="og:site_name" content="Gameboy Camera" />
 	<meta property="og:description" content="random Gameboy Camera animation" />
+	<title>Jambonbill Gameboy Camera GIF</title>
 </head>
 
-<body>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-<style>
-body{background-color:black;}
-img{
-	width:100%;
-	height: auto;
-	image-rendering:optimizeSpeed;             /* Legal fallback */
-	image-rendering:-moz-crisp-edges;          /* Firefox        */
-	image-rendering:-o-crisp-edges;            /* Opera          */
-	image-rendering:-webkit-optimize-contrast; /* Safari         */
-	image-rendering:optimize-contrast;         /* CSS3 Proposed  */
-	image-rendering:crisp-edges;               /* CSS4 Proposed  */
-	image-rendering:pixelated;                 /* CSS4 Proposed  */
-	-ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
-}
-</style>
+
 </head>
 <body>
 <div class='container' style="max-width: 720px;">
@@ -49,5 +40,5 @@ img{
 echo "<a href='http://gameboycamera.jambonbill.org'><img src='".$files[0]."' title='".basename($files[0])."' width=160 height=144></a>";
 ?>
 </body>
-<script>setTimeout(function(){document.location.reload()},10000);</script>
+<script src=js/gbc.js></script>
 </html>
