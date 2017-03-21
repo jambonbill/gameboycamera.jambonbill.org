@@ -22,7 +22,7 @@ shuffle($files);
 	<meta property="og:url" content="http://gameboycamera.jambonbill.org/" />
 	<meta property="og:image" content="<?php echo $files[0]?>" />
 	<meta property="og:site_name" content="Gameboy Camera" />
-	<meta property="og:description" content="Jambonbill Gameboy Camera" />
+	<meta property="og:description" content="random Gameboy Camera animation" />
 </head>
 
 <body>
