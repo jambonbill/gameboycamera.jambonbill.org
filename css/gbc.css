@@ -1,8 +1,12 @@
 body{
-	background-color:black;
+	background-color:black!important;
 }
 
 img{
+
+	width:100%;
+	height: auto;
+
 	image-rendering:optimizeSpeed;             /* Legal fallback */
 	image-rendering:-moz-crisp-edges;          /* Firefox        */
 	image-rendering:-o-crisp-edges;            /* Opera          */
